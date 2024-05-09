@@ -1,0 +1,29 @@
+//colors
+$pink: #FF6060;
+
+// font
+$font: 'Montserrat', sans-serif;
+$medium: 500;
+$bold: 700;
+$size12: 12px;
+$size18: 18px;
+$size24: 24px;
+
+.footer {
+  background-color: black;
+  width: 100%;
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__logo {
+
+  }
+  &__text {
+    margin-top: 1rem;
+    color: white;
+    font-weight: $medium;
+    font-size: $size12;
+  }
+}

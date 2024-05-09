@@ -1,0 +1,29 @@
+// Fichier principal css
+
+@import 'header.scss';
+@import 'hero.scss';
+@import 'main.scss';
+@import 'footer.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+//colors
+$pink: #FF6060;
+
+// font
+$font: 'Montserrat', sans-serif;
+$medium: 500;
+$bold: 700;
+$size12: 12px;
+$size18: 18px;
+$size24: 24px;
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font;
+}

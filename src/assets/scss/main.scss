@@ -1,0 +1,44 @@
+//colors
+$pink: #FF6060;
+
+// font
+$font: 'Montserrat', sans-serif;
+$medium: 500;
+$bold: 700;
+$size12: 12px;
+$size18: 18px;
+$size24: 24px;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+
+  &__card {
+    //flex: 1 1 21%;
+    height: 16rem;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, rgba(255, 96, 96, 0), rgba(255, 96, 96, 0.50));
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+
+    &__img {
+      width: 100%;
+      height: 16rem;
+      object-fit: cover;
+      //display: block;
+      position: relative;
+      z-index: -1;
+    }
+
+    &__title {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      color: white;
+      font-size: $size18;
+    }
+  }
+}
