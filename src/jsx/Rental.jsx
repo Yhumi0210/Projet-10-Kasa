@@ -25,13 +25,16 @@ const Rental = () => {
             <h1 className="rental__title">{rental.title}</h1>
             <p className="rental__text">{rental.location}</p>
             <RentalTags tags={rental.tags}/>
-            <section>
-                <div>
+            <section className="rental__details">
+                <div className="rental__details__rating">
                     <RatingStars rating={parseInt(rental.rating)}/>
                 </div>
-                <div>
-                    <p className="">{rental.host.name}</p>
-                    <img src={rental.host.picture} alt={`Profile of ${rental.host.name}`}/>
+                <div className="rental__details__owner">
+                    <p className="rental__details__owner__name">{rental.host.name}</p>
+                    <div className="rental__details__owner__box">
+                        <img className="rental__details__owner__box__picture" src={rental.host.picture}
+                             alt={`Profile of ${rental.host.name}`}/>
+                    </div>
                 </div>
             </section>
             {/* autres détails du logement */}

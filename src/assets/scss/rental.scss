@@ -38,12 +38,19 @@ $size24: 24px;
       right: 0;
       top: 45%;
     }
+    .image-counter {
+      position: absolute;
+      left: 48%;
+      bottom: 1rem;
+      color: white;
+      font-size: $size12;
+    }
   }
   &__title {
     color: $pink;
     font-size: $size18;
     font-weight: $medium;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     line-height: 1.8rem;
   }
   &__text {
@@ -83,6 +90,37 @@ $size24: 24px;
       width: 1rem;
       height: auto;
       align-self: center;
+    }
+  }
+  &__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &__rating {
+    }
+    &__owner {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      flex-direction: row;
+      gap: 0.5rem;
+      &__name {
+        width: 3rem;
+        text-align: right;
+        font-size: $size12;
+        font-weight: $medium;
+        color: $pink;
+      }
+      &__box {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        &__picture {
+        }
+      }
     }
   }
 }
