@@ -3,8 +3,7 @@ import React from 'react'
 function Hero() {
     return (
         <div className='hero'>
-            <h1 className="hero__title">Chez vous,
-                <br />partout et ailleurs</h1>
+            <h1 className="hero__title">Chez vous, partout et ailleurs</h1>
         </div>
     )
 }

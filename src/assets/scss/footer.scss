@@ -18,12 +18,21 @@ $size24: 24px;
   justify-content: center;
   align-items: center;
   &__logo {
-
+    @media (min-width: 1440px) {
+      width: 10%;
+      margin-bottom: 2rem;
+    }
   }
   &__text {
     margin-top: 1rem;
     color: white;
     font-weight: $medium;
     font-size: $size12;
+    width: 8rem;
+    text-align: center;
+    @media (min-width: 1440px) {
+      width: 100%;
+      font-size: $size24;
+    }
   }
 }

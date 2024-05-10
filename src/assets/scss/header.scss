@@ -14,10 +14,18 @@ $size24: 24px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @media (min-width: 1440px) {
+    margin-bottom: 2rem;
+  }
   &__logo {
     margin: 1rem;
     width: 40%;
     height: auto;
+    @media (min-width: 1440px) {
+      margin: 2rem 0 2rem 6rem;
+      width: 20%;
+      height: auto;
+    }
   }
   &__nav {
     display: flex;
@@ -25,10 +33,40 @@ $size24: 24px;
     justify-content: space-between;
     margin-right: 1rem;
     width: 9rem;
+    @media (min-width: 1440px) {
+      margin-right: 6rem;
+      width: 20rem;
+    }
     &__menu {
       text-transform: uppercase;
       font-weight: $medium;
       font-size: $size12;
+      text-decoration: none;
+      color: black;
+      position: relative;
+
+      @media (min-width: 1440px) {
+        text-transform: capitalize;
+        font-weight: $medium;
+        font-size: $size24;
+      }
+      &.active {
+        text-decoration: underline;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 3px;
+        left: 50%;
+        width: 0;
+        height: 1px;
+        background-color: black;
+        transition: all 0.3s ease;
+      }
+      &:hover:after {
+        width: 100%;
+        left: 0;
+      }
     }
   }
 }
