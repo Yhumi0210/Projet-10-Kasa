@@ -13,12 +13,30 @@ $size24: 24px;
 .rental {
   margin: 1rem;
   &__box {
+    position: relative;
     height: 15rem;
+    display: flex;
+    align-items: center;
     &__img {
       object-fit: cover;
       width: 100%;
       height: auto;
       border-radius: 10px;
+    }
+    .arrow {
+      color: white;
+      width: 1.5rem;
+      height: auto;
+    }
+    .left {
+      position: absolute;
+      left: 0;
+      top: 45%;
+    }
+    .right {
+      position: absolute;
+      right: 0;
+      top: 45%;
     }
   }
   &__title {
@@ -55,14 +73,16 @@ $size24: 24px;
     }
   }
   &__star {
-    color: $pink;
-    font-size: 20px;
     &__full {
-      color: $pink;
+      width: 1rem;
+      height: auto;
+      align-self: center;
+      margin-right: 0.2rem;
     }
     &__empty {
-      color: $grey;
-      //background-color: $grey;
+      width: 1rem;
+      height: auto;
+      align-self: center;
     }
   }
 }

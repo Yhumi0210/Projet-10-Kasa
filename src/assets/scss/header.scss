@@ -56,12 +56,15 @@ $size24: 24px;
       &:after {
         content: '';
         position: absolute;
-        bottom: 3px;
+        bottom: 1px;
         left: 50%;
         width: 0;
         height: 1px;
         background-color: black;
         transition: all 0.3s ease;
+        @media (min-width: 1440px) {
+          bottom: 3px;
+        }
       }
       &:hover:after {
         width: 100%;
