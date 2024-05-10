@@ -4,6 +4,8 @@ import data from '../database/DataBase.json'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import RentalTags from './RentalTags'
+import RatingStars from './RatingStars'
 
 const Rental = () => {
     const { id } = useParams() // Récupération de l'ID à partir de l'URL
@@ -32,24 +34,20 @@ const Rental = () => {
             <Slider {...settings}>
                 {rental.pictures.map((picture, index) => (
                     <div key={index} className="rental__box">
-                        <img className="rental__box__img" src={picture} alt={`View ${index}`} />
+                        <img className="rental__box__img" src={picture} alt={`View ${index}`}/>
                     </div>
                 ))}
             </Slider>
             <h1 className="rental__title">{rental.title}</h1>
             <p className="rental__text">{rental.location}</p>
-            <section className="rental__boxtag">
-                <div className="rental__boxtag__tags">
-                    {rental.tags}
-                </div>
-            </section>
+            <RentalTags tags={rental.tags}/>
             <section>
                 <div>
-                    {rental.rating}
+                    <RatingStars rating={parseInt(rental.rating)}/>
                 </div>
                 <div>
                     <p>{rental.host.name}</p>
-                    <img src={rental.host.picture}/>
+                    <img src={rental.host.picture} alt={`Profile of ${rental.host.name}`}/>
                 </div>
             </section>
             {/* autres détails du logement */}

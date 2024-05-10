@@ -1,5 +1,6 @@
 //colors
 $pink: #FF6060;
+$grey: #E3E3E3;
 
 // font
 $font: 'Montserrat', sans-serif;
@@ -32,5 +33,36 @@ $size24: 24px;
     font-size: 14px;
     font-weight: $medium;
     margin-top: 0.6rem;
+  }
+  &__boxtag{
+    margin: 1rem 0 1.5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5rem;
+    &__tags {
+      color: white;
+      font-size: 10px;
+      font-weight: $medium;
+      background-color: $pink;
+      width: 6.5rem;
+      height: 1.5rem;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__star {
+    color: $pink;
+    font-size: 20px;
+    &__full {
+      color: $pink;
+    }
+    &__empty {
+      color: $grey;
+      //background-color: $grey;
+    }
   }
 }

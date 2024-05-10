@@ -199,6 +199,36 @@
   font-weight: 500;
   margin-top: 0.6rem;
 }
+.rental__boxtag {
+  margin: 1rem 0 1.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 0.5rem;
+}
+.rental__boxtag__tags {
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+  background-color: #FF6060;
+  width: 6.5rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rental__star {
+  color: #FF6060;
+  font-size: 20px;
+}
+.rental__star__full {
+  color: #FF6060;
+}
+.rental__star__empty {
+  color: #E3E3E3;
+}
 
 .footer {
   background-color: black;
