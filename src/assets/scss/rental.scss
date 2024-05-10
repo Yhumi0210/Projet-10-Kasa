@@ -1,0 +1,36 @@
+//colors
+$pink: #FF6060;
+
+// font
+$font: 'Montserrat', sans-serif;
+$medium: 500;
+$bold: 700;
+$size12: 12px;
+$size18: 18px;
+$size24: 24px;
+
+.rental {
+  margin: 1rem;
+  &__box {
+    height: 15rem;
+    &__img {
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+  &__title {
+    color: $pink;
+    font-size: $size18;
+    font-weight: $medium;
+    margin-top: 2rem;
+    line-height: 1.8rem;
+  }
+  &__text {
+    color: black;
+    font-size: 14px;
+    font-weight: $medium;
+    margin-top: 0.6rem;
+  }
+}
