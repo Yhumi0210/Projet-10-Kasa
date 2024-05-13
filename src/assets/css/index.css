@@ -425,6 +425,10 @@
   list-style-type: none;
 }
 
+.about-page {
+  margin: 0 1rem;
+}
+
 .about {
   height: 6rem;
   position: relative;
