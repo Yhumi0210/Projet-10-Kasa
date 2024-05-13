@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Yhumi0210/Projet-10-Kasa/static/css/main.a92599e5.css",
+    "main.js": "/Yhumi0210/Projet-10-Kasa/static/js/main.b04d2749.js",
+    "static/media/img2.png": "/Yhumi0210/Projet-10-Kasa/static/media/img2.640955dab8c7bff25514.png",
+    "static/media/img1.png": "/Yhumi0210/Projet-10-Kasa/static/media/img1.19221376a0aa2549c135.png",
+    "index.html": "/Yhumi0210/Projet-10-Kasa/index.html",
+    "main.a92599e5.css.map": "/Yhumi0210/Projet-10-Kasa/static/css/main.a92599e5.css.map",
+    "main.b04d2749.js.map": "/Yhumi0210/Projet-10-Kasa/static/js/main.b04d2749.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a92599e5.css",
+    "static/js/main.b04d2749.js"
+  ]
+}
