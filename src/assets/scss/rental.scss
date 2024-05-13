@@ -10,18 +10,32 @@ $size12: 12px;
 $size18: 18px;
 $size24: 24px;
 
+@media (min-width: 1440px) {
+
+}
+
 .rental {
   margin: 1rem;
+  @media (min-width: 1440px) {
+    margin: 6rem 6rem 0 6rem;
+  }
   &__box {
     position: relative;
     height: 15rem;
     display: flex;
     align-items: center;
+    @media (min-width: 1440px) {
+      margin-bottom: 7rem;
+    }
     &__img {
       object-fit: cover;
       width: 100%;
       height: auto;
       border-radius: 10px;
+      @media (min-width: 1440px) {
+        height: 25rem;
+        border-radius: 25px;
+      }
     }
     .arrow {
       color: white;
@@ -44,6 +58,9 @@ $size24: 24px;
       bottom: 1rem;
       color: white;
       font-size: $size12;
+      @media (min-width: 1440px) {
+        bottom: -4rem;
+      }
     }
   }
   &__title {
@@ -52,20 +69,30 @@ $size24: 24px;
     font-weight: $medium;
     margin-top: 0.5rem;
     line-height: 1.8rem;
+    @media (min-width: 1440px) {
+      font-size: 36px;
+    }
   }
   &__text {
     color: black;
     font-size: 14px;
     font-weight: $medium;
     margin-top: 0.6rem;
+    @media (min-width: 1440px) {
+      font-size: $size18;
+      margin-top: 0.9rem;
+    }
   }
   &__boxtag{
-    margin: 1rem 0 1.5rem 0;
+    margin: 0.7rem 0 1.5rem 0;
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
     gap: 0.5rem;
+    @media (min-width: 1440px) {
+
+    }
     &__tags {
       color: white;
       font-size: 10px;
@@ -77,6 +104,13 @@ $size24: 24px;
       display: flex;
       justify-content: center;
       align-items: center;
+      @media (min-width: 1440px) {
+        font-size: 14px;
+        font-weight: $medium;
+        width: 9rem;
+        height: 1.5rem;
+        border-radius: 10px;
+      }
     }
   }
   &__star {
@@ -85,11 +119,17 @@ $size24: 24px;
       height: auto;
       align-self: center;
       margin-right: 0.2rem;
+      @media (min-width: 1440px) {
+        margin-right: 0.5rem;
+      }
     }
     &__empty {
       width: 1rem;
       height: auto;
       align-self: center;
+      @media (min-width: 1440px) {
+
+      }
     }
   }
   &__details {
@@ -97,7 +137,17 @@ $size24: 24px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1rem;
+    @media (min-width: 1440px) {
+      margin-top: -7.7rem;
+      flex-direction: column-reverse;
+      justify-content: right;
+      align-items: end;
+    }
     &__rating {
+      @media (min-width: 1440px) {
+        margin-top: 2rem;
+      }
     }
     &__owner {
       display: flex;
@@ -111,6 +161,10 @@ $size24: 24px;
         font-size: $size12;
         font-weight: $medium;
         color: $pink;
+        @media (min-width: 1440px) {
+          font-size: $size18;
+          width: 6rem;
+        }
       }
       &__box {
         width: 2.5rem;
@@ -118,6 +172,10 @@ $size24: 24px;
         border-radius: 50%;
         overflow: hidden;
         display: flex;
+        @media (min-width: 1440px) {
+          width: 3rem;
+          height: 3rem;
+        }
         &__picture {
         }
       }

@@ -7,7 +7,9 @@ function Header() {
     return (
         <div>
             <header className="header">
-                <img src={logo} className="header__logo" alt="logo" />
+                <NavLink to="/">
+                    <img src={logo} className="header__logo" alt="logo" />
+                </NavLink>
                 <nav className="header__nav">
                     <NavLink to="/" className="header__nav__menu" activeClassName="active" exact >
                         accueil

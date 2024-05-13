@@ -4,6 +4,7 @@ import data from '../database/DataBase.json'
 import ImageSlider from './ImageSlider'
 import RentalTags from './RentalTags'
 import RatingStars from './RatingStars'
+import Collapse from './Collapse'
 
 const Rental = () => {
     const { id } = useParams() // Récupération de l'ID à partir de l'URL
@@ -37,7 +38,10 @@ const Rental = () => {
                     </div>
                 </div>
             </section>
-            {/* autres détails du logement */}
+            <section className="section-collapse">
+                <Collapse title="Description" content={rental.description} />
+                <Collapse title="Équipements" content={<ul>{rental.equipments.map((equip, index) => <li key={index}>{equip}</li>)}</ul>} />
+            </section>
         </div>
     )
 }
