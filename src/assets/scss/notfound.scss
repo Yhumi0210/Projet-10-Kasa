@@ -1,0 +1,48 @@
+//colors
+$pink: #FF6060;
+
+// font
+$font: 'Montserrat', sans-serif;
+$medium: 500;
+$bold: 700;
+$size12: 12px;
+$size18: 18px;
+$size24: 24px;
+
+.error {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 4rem;
+  @media (min-width: 1440px) {
+    height: 80vh;
+    margin: 2rem 12rem 6rem 12rem;
+  }
+  &__title {
+    color: $pink;
+    font-size: 96px;
+    font-weight: $bold;
+    @media (min-width: 1440px) {
+      font-size: 288px;
+    }
+  }
+  &__text {
+    color: $pink;
+    font-size: $size18;
+    font-weight: $medium;
+    @media (min-width: 1440px) {
+      font-size: 36px;
+    }
+  }
+  &__link {
+    color: black;
+    font-size: 14px;
+    font-weight: $medium;
+    @media (min-width: 1440px) {
+      font-size: $size18;
+    }
+  }
+}
