@@ -12,7 +12,7 @@ import './assets/css/index.css'
 
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename="/Projet-11-Kasa">
             <Header />
             <Routes>
                 <Route path="/" element={<><Hero /><Main /></>} />
