@@ -1,6 +1,5 @@
 import React from 'react'
-import logo from "../img/logo.png";
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom"
 
 function NotFound() {
     return (

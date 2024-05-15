@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './jsx/Header'
 import Hero from './jsx/Hero'
@@ -10,9 +10,10 @@ import About from './jsx/About'
 import NotFound from './jsx/NotFound'
 import './assets/css/index.css'
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(
     <React.StrictMode>
-        <BrowserRouter basename="/Projet-11-Kasa">
+        <BrowserRouter>
             <Header />
             <Routes>
                 <Route path="/" element={<><Hero /><Main /></>} />
@@ -22,6 +23,5 @@ ReactDOM.render(
             </Routes>
             <Footer />
         </BrowserRouter>
-    </React.StrictMode>,
-    document.getElementById('root')
+    </React.StrictMode>
 )

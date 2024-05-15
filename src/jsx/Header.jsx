@@ -11,10 +11,10 @@ function Header() {
                     <img src={logo} className="header__logo" alt="logo" />
                 </NavLink>
                 <nav className="header__nav">
-                    <NavLink to="/" className="header__nav__menu" activeClassName="active" exact >
+                    <NavLink to="/" className={({ isActive }) => isActive ? "header__nav__menu active" : "header__nav__menu"} end>
                         accueil
                     </NavLink>
-                    <NavLink to="/about" className="header__nav__menu" activeClassName="active">
+                    <NavLink to="/about" className={({ isActive }) => isActive ? "header__nav__menu active" : "header__nav__menu"} end>
                         à propos
                     </NavLink>
                 </nav>
