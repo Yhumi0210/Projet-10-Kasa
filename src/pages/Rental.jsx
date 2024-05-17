@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import data from '../database/DataBase.json'
-import ImageSlider from './ImageSlider'
-import RentalTags from './RentalTags'
-import RatingStars from './RatingStars'
-import Collapse from './Collapse'
+import ImageSlider from '../components/ImageSlider'
+import RentalTags from '../components/RentalTags'
+import RatingStars from '../components/RatingStars'
+import Collapse from '../components/Collapse'
 
 const Rental = () => {
     const { id } = useParams() // Récupération de l'ID à partir de l'URL

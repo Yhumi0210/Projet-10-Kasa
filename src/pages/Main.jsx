@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'  // Import de useNavigate
 import data from '../database/DataBase.json'
+import Hero from '../components/common/Hero'
+import image from '../img/img1.png'
 
 const Main = () => {
     const [properties, setProperties] = useState([])
@@ -16,7 +18,8 @@ const Main = () => {
         navigate(`/rental/${id}`)  // Navigate vers la page du logement avec l'ID correspondant
     }
 
-    return (
+    return (<div>
+        <Hero image={image} title="Chez vous, partout et ailleurs"/>
         <div className="main">
             {properties.map(property => (
                 <div key={property.id} className="main__card" onClick={() => handleCardClick(property.id)}>
@@ -24,6 +27,7 @@ const Main = () => {
                     <h2 className="main__card__title">{property.title}</h2>
                 </div>
             ))}
+        </div>
         </div>
     )
 }

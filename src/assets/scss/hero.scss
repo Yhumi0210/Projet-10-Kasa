@@ -10,19 +10,24 @@ $size18: 18px;
 $size24: 24px;
 
 .hero {
-  //width: 100%;
   height: 6rem;
   position: relative;
   margin: 1rem;
   border-radius: 10px;
   overflow: hidden;
-  background: url('../../img/img1.png') no-repeat center center;
-  background-size: cover;
   @media (min-width: 1440px) {
     margin: 0 6rem 3rem 6rem;
-    height: 12rem;
+    height: 14rem;
     border-radius: 25px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 6rem;
+    @media (min-width: 1440px) {
+      height: 14rem;
+    }
   }
 
   &::before {
@@ -32,7 +37,7 @@ $size24: 24px;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     z-index: 1;
   }
@@ -42,14 +47,13 @@ $size24: 24px;
     top: 1.6rem;
     left: 1rem;
     width: 11rem;
-    //transform: translate(-50%, -50%);
     color: white;
     font-weight: $bold;
     font-size: $size18;
     z-index: 2;
     @media (min-width: 1440px) {
       font-size: 48px;
-      top: 4rem;
+      top: 5rem;
       left: 16rem;
       width: 100%;
     }

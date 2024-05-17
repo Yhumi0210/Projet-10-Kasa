@@ -16,6 +16,7 @@ const ImageSlider = ({ images }) => {
     // Gestion de la navigation au clavier
     useEffect(() => {
         const handleKeyDown = (event) => {
+            console.log(handleKeyDown)
             if (event.key === 'ArrowLeft') {
                 goToPrevious();
             } else if (event.key === 'ArrowRight') {

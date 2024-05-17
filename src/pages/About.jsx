@@ -1,5 +1,7 @@
 import React from 'react'
-import Collapse from './Collapse'
+import Collapse from '../components/Collapse'
+import Hero from '../components/common/Hero'
+import image from '../img/img2.png'
 
 function About() {
     const aboutList = [
@@ -27,8 +29,8 @@ function About() {
 
     return (
         <div>
-            <div className="about"></div>
-            <section className="about-page">
+            <Hero image={image}/>
+            <section className="about">
                 {aboutList.map((item, index) => (
                 <Collapse key={index} title={item.title} content={item.content} />
             ))}
