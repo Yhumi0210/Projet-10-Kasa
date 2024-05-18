@@ -1,36 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
 const ImageSlider = ({ images }) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(0)
 
     const goToPrevious = () => {
-        const newIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
-        setCurrentIndex(newIndex);
-    };
+        const newIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1
+        setCurrentIndex(newIndex)
+    }
 
     const goToNext = () => {
-        const newIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
-        setCurrentIndex(newIndex);
-    };
+        const newIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1
+        setCurrentIndex(newIndex)
+    }
 
     // Gestion de la navigation au clavier
     useEffect(() => {
         const handleKeyDown = (event) => {
             console.log(handleKeyDown)
             if (event.key === 'ArrowLeft') {
-                goToPrevious();
+                goToPrevious()
             } else if (event.key === 'ArrowRight') {
-                goToNext();
+                goToNext()
             }
-        };
+        }
 
-        window.addEventListener('keydown', handleKeyDown);
+        window.addEventListener('keydown', handleKeyDown)
 
         // Nettoyage de l'écouteur d'événements
         return () => {
-            window.removeEventListener('keydown', handleKeyDown);
-        };
-    }, [currentIndex, images.length]);
+            window.removeEventListener('keydown', handleKeyDown)
+        }
+    }, [currentIndex, images.length])
 
     return (
         <div className="rental__box">
@@ -51,7 +51,7 @@ const ImageSlider = ({ images }) => {
                 <div className="image-counter">{`${currentIndex + 1} / ${images.length}`}</div>
             )}
         </div>
-    );
+    )
 }
 
-export default ImageSlider;
+export default ImageSlider
