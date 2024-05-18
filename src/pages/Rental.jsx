@@ -9,7 +9,6 @@ import Collapse from '../components/Collapse'
 const Rental = () => {
     const { id } = useParams() // Récupération de l'ID à partir de l'URL
     const [rental, setRental] = useState(null)
-    const [isLoading, setIsLoading] = useState(true) // Ajout d'un état de chargement
     const navigate = useNavigate()
 
     useEffect(() => {
@@ -21,12 +20,7 @@ const Rental = () => {
         } else {
             navigate('/404') // Redirige vers la page 404 si l'ID est invalide
         }
-        setIsLoading(false) // Mettre à jour l'état de chargement
     }, [id, navigate])
-
-    if (isLoading) {
-        return <div>Loading...</div> // Gestion de l'état de chargement
-    }
 
     return (
         <div className="rental">

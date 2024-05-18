@@ -1,13 +1,13 @@
 // Fichier principal css
 
-@import 'header.scss';
-@import 'hero.scss';
-@import 'main.scss';
-@import 'rental.scss';
+@import 'common/header.scss';
+@import 'common/hero.scss';
+@import 'pages/main.scss';
+@import 'pages/rental.scss';
 @import 'collapse.scss';
-@import 'about.scss';
-@import 'notfound.scss';
-@import 'footer.scss';
+@import 'pages/about.scss';
+@import 'pages/notfound.scss';
+@import 'common/footer.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 

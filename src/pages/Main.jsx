@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'  // Import de useNavigate
+import { useNavigate } from 'react-router-dom'
 import data from '../database/DataBase.json'
 import Hero from '../components/common/Hero'
 import image from '../img/img1.png'
@@ -15,7 +15,7 @@ const Main = () => {
 
     // Fonction pour gérer le clic sur une carte
     const handleCardClick = (id) => {
-        navigate(`/rental/${id}`)  // Navigate vers la page du logement avec l'ID correspondant
+        navigate(`/rental/${id}`)  // Navigue vers la page du logement avec l'ID correspondant
     }
 
     return (<div>
