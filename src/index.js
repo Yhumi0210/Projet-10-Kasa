@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/common/Header'
 import Main from './pages/Main'
 import Rental from './pages/Rental'
@@ -12,7 +12,7 @@ import './assets/css/index.css'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
     <React.StrictMode>
-        <BrowserRouter>
+        <HashRouter>
             <Header />
             <Routes>
                 <Route path="/" element={<Main />} />
@@ -21,6 +21,6 @@ root.render(
                 <Route path="*" element={<NotFound />} /> {/* Cette route capture toutes les autres URL non listées */}
             </Routes>
             <Footer />
-        </BrowserRouter>
+        </HashRouter>
     </React.StrictMode>
 )
