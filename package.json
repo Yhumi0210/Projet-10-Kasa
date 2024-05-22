@@ -14,15 +14,12 @@
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://yhumi0210.github.io/Projet-11-Kasa/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "sass --watch src/assets/scss/index.scss:src/assets/css/index.css",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "sass": "sass --watch src/assets/scss/index.scss:src/assets/css/index.css"
   },
   "eslintConfig": {
     "extends": [
